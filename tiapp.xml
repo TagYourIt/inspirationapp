@@ -44,7 +44,7 @@
         <theme>default</theme>
     </mobileweb>
     <modules>
-        <module platform="commonjs" version="2.3.2">ti.cloud</module>
+        
         <module version="1.5">ti.admob</module>
     </modules>
     <deployment-targets>
