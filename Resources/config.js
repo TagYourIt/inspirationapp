@@ -3,14 +3,14 @@ var config = {
   /**************** app setting ****************/
 
   // wordpress url
-  "BLOG_URL"            : "http://viet.whoisleon.com",
+  "BLOG_URL"            : "http://inspiration.whoisleon.com/feed/",
 
   // webmaster email
   "WEBMASTER_EMAIL"     : "leon@whoisleon.com",
 
   // json data feed option
-  "JSON_POST_COUNT"     : "20",
-  "JSON_API_KEY"        : "123456",
+  "JSON_POST_COUNT"     : "40",
+  "JSON_API_KEY"        : "0987654321",
 
   // social sites
   "TWITTER_ACCOUNT"     : "whoisleon",
