@@ -1,0 +1,1 @@
+/AppDev/inspirationapp/Resources/ui/post.js

@@ -1,0 +1,1 @@
+/AppDev/inspirationapp/Resources/lib/load_indicator.js

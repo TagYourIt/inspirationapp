@@ -1,0 +1,23 @@
+{
+	"target": "simulator",
+	"deployType": "development",
+	"deviceFamily": "iphone",
+	"iosSdkPath": "/Users/Prime/Library/Application Support/Titanium/mobilesdk/osx/3.1.1.GA/iphone",
+	"appGuid": "d6b3743f-79c3-49f9-a659-02b1cb945a5f",
+	"tiCoreHash": "77157e1ffaec640cf559356a147b6a4c",
+	"modulesHash": "1611cc8dc49a3237bfe9e24b4b46430f",
+	"nativeModulesHash": "95b65728311c45cb06f8b4a509855e1a",
+	"gitHash": "f7592c1",
+	"name": "VietNews",
+	"id": "org.heart.LeonTestAppThree",
+	"analytics": true,
+	"publisher": "Leon Truong",
+	"url": "http://whoisleon.com",
+	"version": "1.0",
+	"description": "not specified",
+	"copyright": "2013 by Leon Truong",
+	"guid": "d6b3743f-79c3-49f9-a659-02b1cb945a5f",
+	"skipJSMinification": true,
+	"forceCopy": false,
+	"forceCopyAll": false
+}

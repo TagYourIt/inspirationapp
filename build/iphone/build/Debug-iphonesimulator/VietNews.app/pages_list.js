@@ -1,0 +1,1 @@
+/AppDev/inspirationapp/Resources/pages_list.js

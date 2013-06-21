@@ -1,0 +1,1 @@
+/AppDev/inspirationapp/Resources/lib/share.js

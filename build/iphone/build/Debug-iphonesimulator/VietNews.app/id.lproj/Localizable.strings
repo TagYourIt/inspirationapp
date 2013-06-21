@@ -1,0 +1,40 @@
+/**
+ * Appcelerator Titanium
+ * this is a generated file - DO NOT EDIT
+ */
+
+"wpapp_recent" = "Berita Terbaru";
+"wpapp_categories" = "Kategori";
+"wpapp_pages" = "Halaman";
+"wpapp_twitter" = "Twitter";
+"wpapp_about" = "Info";
+"recent_news" = "Berita Terbaru";
+"categ_categories" = "Kategori";
+"about" = "Info";
+"about_reset_data" = "Hapus Data";
+"about_alert" = "Anda ingin menghapus data?";
+"about_yes" = "Ya";
+"about_no" = "Tidak";
+"about_contact_webmaster" = "Kontak Webmaster";
+"about_tell_a_friend" = "Beritahu Teman";
+"about_visit_website" = "Kunjungi Website";
+"about_terms_and_conditions" = "Terms & Conditions";
+"about_privacy_policy" = "Privacy Policy";
+"share" = "Berbagi";
+"share_this_on" = "Berbagi melalui...";
+"share_email" = "Email";
+"share_cancel" = "Batal";
+"post_source" = "Sumber";
+"indicator_loading" = "Sedang mengunduh...";
+"ptr_pull_to_reload" = "Tarik untuk perbarui berita";
+"ptr_last_updated" = "Terakhir diperbarui:";
+"ptr_pull_down_to_refresh" = "Tarik ke bawah untuk perbarui berita...";
+"ptr_release_to_refresh" = "Lepaskan untuk perbarui berita...";
+"ptr_reloading" = "Sedang memperbarui berita...";
+"webmaster_subject" = "Saran untuk Iphone app";
+"webmaster_body" = "";
+"tell_friend_subject" = "Iphone app menarik";
+"tell_friend_body" = "Saya ingin berbagi sebuah iphone app yang menarik.";
+"twitter" = "Twitter Posts";
+"pages" = "Halaman";
+"pages_available" = "Halaman yang tersedia";

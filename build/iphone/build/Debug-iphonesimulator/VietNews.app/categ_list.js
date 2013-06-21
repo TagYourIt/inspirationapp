@@ -1,0 +1,1 @@
+/AppDev/inspirationapp/Resources/categ_list.js
