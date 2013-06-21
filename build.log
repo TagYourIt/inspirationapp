@@ -1,0 +1,185 @@
+Logfile initialized
+[INFO] logfile = /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build.log
+[INFO] logfile = /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build.log
+[DEBUG] /Users/void/Library/Application Support/Titanium/mobilesdk/osx/3.1.1.GA/android/builder.py simulator VietNews /Users/void/Documents/AndroidSDK /Users/void/Documents/Titanium_Studio_Workspace/VietNews org.heart.LeonTestAppThree 6 HVGA
+[DEBUG] /Users/void/Library/Application Support/Titanium/mobilesdk/osx/3.1.1.GA/android/builder.py emulator VietNews /Users/void/Documents/AndroidSDK /Users/void/Documents/Titanium_Studio_Workspace/VietNews org.heart.LeonTestAppThree 6 HVGA armeabi-v7a
+[INFO] Launching Android emulator...one moment
+[DEBUG] From: /Users/void/Documents/AndroidSDK/tools/emulator
+[DEBUG] SDCard: /Users/void/.titanium/android2.sdcard
+[DEBUG] AVD ID: 6
+[DEBUG] AVD Skin: HVGA
+[DEBUG] AVD ABI: armeabi-v7a
+[DEBUG] SDK: /Users/void/Documents/AndroidSDK
+[INFO] Building VietNews for Android ... one moment
+[INFO] Titanium SDK version: 3.1.1 (06/15/13 16:09 f7592c1)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 0 devices/emulators
+[INFO] Creating 64M SD card for use in Android emulator
+[INFO] Creating new Android Virtual Device (6 HVGA)
+[DEBUG] /Users/void/Documents/AndroidSDK/tools/emulator -avd titanium_6_HVGA -port 5560 -sdcard /Users/void/.titanium/titanium_6_HVGA.sdcard -logcat *:d,*,TiAPI:V -no-boot-anim -partition-size 128
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 45 seconds)
+[DEBUG] waited 45.467085 seconds on emulator to get ready
+[INFO] Waiting for the Android Emulator to become available
+[ERROR] Timed out waiting for android.process.acore
+[DEBUG] org.heart.LeonTestAppThree installed? False
+[INFO] Fastdev server running, deploying in Fastdev mode
+[INFO] Copying CommonJS modules...
+[INFO] Copying project resources..
+[INFO] Detected change in tiapp.xml, or assets deleted. Forcing full re-build...
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/appicon.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/appicon.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/default.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/default.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/app.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/app.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/categ_list.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/categ_list.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/config.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/config.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/112-group.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/112-group.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/121-landscape.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/121-landscape.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/123-idcard.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/123-idcard.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/179-notepad.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/179-notepad.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/23-bird.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/23-bird.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/33-cabinet.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/33-cabinet.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/46-movie-2.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/46-movie-2.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/53-house.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/53-house.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/86-camera.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/86-camera.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/a_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/a_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/a_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/a_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/business.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/business.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/business@2x.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/business@2x.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/business_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/business_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/business_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/business_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/c_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/c_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/c_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/c_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/categ.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/categ.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/categ@2x.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/categ@2x.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/cf_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/cf_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/cf_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/cf_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/culture.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/culture.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/culture@2x.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/culture@2x.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/culture_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/culture_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/culture_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/culture_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/default.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/default.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/e_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/e_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/e_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/e_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/ent.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/ent.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/ent@2x.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/ent@2x.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/ent_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/ent_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/ent_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/ent_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/g_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/g_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/g_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/g_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/h_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/h_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/h_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/h_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/hs_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/hs_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/hs_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/hs_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/m_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/m_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/m_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/m_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/navbar.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/navbar.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/newspaper.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/newspaper.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/newspaper@2x.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/newspaper@2x.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/s_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/s_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/s_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/s_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/sports.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/sports.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/sports@2x.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/sports@2x.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/sports_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/sports_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/sports_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/sports_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/tech.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/tech.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/tech@2x.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/tech@2x.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/tech_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/tech_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/tech_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/tech_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/world.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/world.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/world@2x.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/world@2x.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/world_off.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/world_off.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ/world_on.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ/world_on.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/categ.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/categ.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/default.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/default.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/newspaper.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/newspaper.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/whiteArrow.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/whiteArrow.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/imgs/wpapp.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/imgs/wpapp.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/KS_nav_ui.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/KS_nav_ui.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/KS_nav_views.png => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/KS_nav_views.png
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/lib/admob.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/lib/admob.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/lib/htmldecode.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/lib/htmldecode.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/lib/load_indicator.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/lib/load_indicator.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/lib/php.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/lib/php.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/lib/prettydate.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/lib/prettydate.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/lib/pull_to_refresh.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/lib/pull_to_refresh.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/lib/push.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/lib/push.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/lib/share.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/lib/share.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/pages_list.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/pages_list.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/black.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/black.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/blacklight.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/blacklight.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/blue.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/blue.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/blueblue.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/blueblue.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/bluedark.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/bluedark.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/bluenext.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/bluenext.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/brown.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/brown.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/brownlight.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/brownlight.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/cloud.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/cloud.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/green.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/green.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/greenlight.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/greenlight.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/magen.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/magen.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/magencyan.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/magencyan.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/orange.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/orange.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/orenjiblack.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/orenjiblack.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/red.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/red.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/redblack.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/redblack.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/redlight.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/redlight.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/silver.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/silver.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/silvercloud.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/silvercloud.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/skin/vietnews.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/skin/vietnews.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/ui/about.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/ui/about.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/ui/categ.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/ui/categ.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/ui/list.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/ui/list.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/ui/page.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/ui/page.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/ui/page_detail.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/ui/page_detail.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/ui/post.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/ui/post.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/ui/recent.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/ui/recent.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/ui/search.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/ui/search.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/ui/twitter.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/ui/twitter.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/ui/webview.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/ui/webview.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/ui/wpapp.js => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/ui/wpapp.js
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/web/privacy.html => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/web/privacy.html
+[TRACE] COPYING CREATED FILE: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/web/terms.html => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/web/terms.html
+[DEBUG] LiveView not enabled
+[TRACE] Generating Java Classes
+[DEBUG] Processing Android resource drawables
+[DEBUG] app stylesheet => /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/gen/org/heart/LeonTestAppThree/ApplicationStylesheet.java
+[DEBUG] copying app icon: /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/appicon.png
+[DEBUG] generating theme.xml
+[DEBUG] found drawable-long-land-hdpi splash screen at /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-long-land-hdpi/default.png
+[DEBUG] copying /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-long-land-hdpi/default.png splash screen to /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/res/drawable-long-land-hdpi/background.png
+[DEBUG] found drawable-long-land-ldpi splash screen at /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-long-land-ldpi/default.png
+[DEBUG] copying /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-long-land-ldpi/default.png splash screen to /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/res/drawable-long-land-ldpi/background.png
+[DEBUG] found drawable-long-port-hdpi splash screen at /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-long-port-hdpi/default.png
+[DEBUG] copying /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-long-port-hdpi/default.png splash screen to /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/res/drawable-long-port-hdpi/background.png
+[DEBUG] found drawable-long-port-ldpi splash screen at /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-long-port-ldpi/default.png
+[DEBUG] copying /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-long-port-ldpi/default.png splash screen to /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/res/drawable-long-port-ldpi/background.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-notlong-land-hdpi/default.png
+[DEBUG] copying /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-notlong-land-hdpi/default.png splash screen to /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/res/drawable-notlong-land-hdpi/background.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-notlong-land-ldpi/default.png
+[DEBUG] copying /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-notlong-land-ldpi/default.png splash screen to /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/res/drawable-notlong-land-ldpi/background.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-notlong-land-mdpi/default.png
+[DEBUG] copying /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-notlong-land-mdpi/default.png splash screen to /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/res/drawable-notlong-land-mdpi/background.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-notlong-port-hdpi/default.png
+[DEBUG] copying /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-notlong-port-hdpi/default.png splash screen to /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/res/drawable-notlong-port-hdpi/background.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-notlong-port-ldpi/default.png
+[DEBUG] copying /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-notlong-port-ldpi/default.png splash screen to /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/res/drawable-notlong-port-ldpi/background.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-notlong-port-mdpi/default.png
+[DEBUG] copying /Users/void/Documents/Titanium_Studio_Workspace/VietNews/Resources/android/images/res-notlong-port-mdpi/default.png splash screen to /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/res/drawable-notlong-port-mdpi/background.png
+[DEBUG] found splash screen at /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/bin/assets/Resources/default.png
+[TRACE] Writing out AndroidManifest.xml
+[DEBUG] adding /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/gen/org/heart/LeonTestAppThree/ApplicationStylesheet.java to javac build list
+[DEBUG] adding /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/gen/org/heart/LeonTestAppThree/R.java to javac build list
+[DEBUG] adding /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/gen/org/heart/LeonTestAppThree/VietnewsActivity.java to javac build list
+[DEBUG] adding /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/gen/org/heart/LeonTestAppThree/VietnewsAppInfo.java to javac build list
+[DEBUG] adding /Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/gen/org/heart/LeonTestAppThree/VietnewsApplication.java to javac build list
+[DEBUG] Building Java Sources: "/Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/gen/org/heart/LeonTestAppThree/ApplicationStylesheet.java" "/Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/gen/org/heart/LeonTestAppThree/R.java" "/Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/gen/org/heart/LeonTestAppThree/VietnewsActivity.java" "/Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/gen/org/heart/LeonTestAppThree/VietnewsAppInfo.java" "/Users/void/Documents/Titanium_Studio_Workspace/VietNews/build/android/gen/org/heart/LeonTestAppThree/VietnewsApplication.java"
+[INFO] Waiting for SDCard to become available..
+[INFO] Android Emulator has exited
