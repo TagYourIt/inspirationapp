@@ -1,1 +1,0 @@
-/AppDev/inspirationapp/Resources/lib/pull_to_refresh.js

@@ -1,1 +1,0 @@
-/AppDev/inspirationapp/Resources/skin/bluedark.js
