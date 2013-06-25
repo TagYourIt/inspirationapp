@@ -1,5 +1,39 @@
 var WpApp = (function() {
-
+	
+	//--- Create Menu Window
+	var menuWindow = Ti.UI.createWindow({
+		title:'Yo',
+		barColor:'#5d5d5d',
+		top:0,
+		left:0,
+		width:150
+	});
+	
+	menuWindow.open();
+	//---Menu Table
+	// Menu Titles
+	var menuTitlesProp = [];
+	var menuTitles = [
+    	{title: 'Menu 1', font:{fontFamily:'Helvetica Neue', fontSize:16, fontWeight:'normal'}},
+    	{title: 'Menu 2'},
+    	{title: 'Menu 3'},
+    	{title: 'Menu 4'},
+    	{title: 'Menu 5'},
+    	{title: 'Menu 6'}
+		];
+		// Tableview
+		var tableView = Ti.UI.createTableView({
+    		data:menuTitles,
+    		backgroundColor:'#eaeaea',
+    		rowHeight:40,
+    		headerTitle:'Menu'
+    		
+		});
+		
+		menuWindow.add(tableView);
+	
+	
+	
     var WpApp = Ti.UI.createTabGroup({}),
         Recent = Ti.UI.createTab({
             titleid : 'wpapp_recent',
@@ -226,6 +260,37 @@ var WpApp = (function() {
     WpApp.init_db = init_db;
     WpApp.About = About;
     WpApp.Pages = Pages;
+
+
+
+
+	
+	
+	
+	//WpApp.left = 250;//parent
+	WpApp.width = 320;
+	
+	WpApp.addEventListener('app:displayMenu',function(e){
+		// If the menu is opened
+    if(e.source.toggle == true){
+        WpApp.animate({
+            left:0,
+            duration:400,
+            curve:Ti.UI.ANIMATION_CURVE_EASE_IN_OUT
+        });
+        e.source.toggle = false;
+    }
+    // If the menu isn't opened
+    else{
+        WpApp.animate({
+            left:150,
+            duration:400,
+            curve:Ti.UI.ANIMATION_CURVE_EASE_IN_OUT
+        });
+        e.source.toggle  = true;
+    }
+	});
+	
 
     return WpApp;
 })();

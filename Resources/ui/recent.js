@@ -18,6 +18,7 @@ var winRecent = (function() {
             title: title,
             barColor: skin.RECENT_BAR_COLOR,
             barImage: skin.RECENT_BAR_IMAGE,
+            
         }),
         viewBlogListRecent = Ti.UI.createTableView({
             top: 0,
@@ -27,6 +28,17 @@ var winRecent = (function() {
             separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.SINGLE_LINE,
             separatorColor: skin.RECENT_TV_SEPARATOR_COLOR
         });
+
+	//// ---- Window with navigationGroup
+
+// Top left button
+var menuButton = Ti.UI.createButton({
+    title:'Menu',
+    toggle:false // Custom property for menu toggle
+});
+Window.setLeftNavButton(menuButton);
+
+
 
     var events = {
         "RESET_TABLEVIEW": "createBlogPostList : RESET_TABLEVIEW_RECENT",
@@ -192,6 +204,10 @@ var winRecent = (function() {
     create_admob(Window);
 
     Titanium.UI.iPhone.appBadge = 0; // reset
+
+	menuButton.addEventListener('click',function(){
+		WpApp.fireEvent('app:displayMenu');
+	});
 
     return Window;
 })();
