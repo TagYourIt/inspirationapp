@@ -1,6 +1,6 @@
 var WpApp = (function() {
 	
-	//--- Create Menu Window
+	//--- Create Menu Window ----------------------------------------
 	var menuWindow = Ti.UI.createWindow({
 		title:'Yo',
 		barColor:'#5d5d5d',
@@ -12,27 +12,57 @@ var WpApp = (function() {
 	menuWindow.open();
 	//---Menu Table
 	// Menu Titles
-	var menuTitlesProp = [];
-	var menuTitles = [
-    	{title: 'Menu 1', font:{fontFamily:'Helvetica Neue', fontSize:16, fontWeight:'normal'}},
-    	{title: 'Menu 2'},
-    	{title: 'Menu 3'},
-    	{title: 'Menu 4'},
-    	{title: 'Menu 5'},
-    	{title: 'Menu 6'}
-		];
+	
+	var categ = categ_list.categs;//get list from categ_list.js file
+    var data = [];//array
+	//create loop to store into data array
+    for (var i = 0; i < categ.length; i++) {
+        var item = {
+           
+            title: categ[i].label,
+            slug: categ[i].slug,
+            json_url: config.BLOG_URL + "?json=get_category_posts&count=" + config.JSON_POST_COUNT + "&apikey=" + config.JSON_API_KEY + "&slug=" + categ[i].slug
+        };
+
+        data.push(item);
+    }
+	
+	
+	
+	
+		
 		// Tableview
 		var tableView = Ti.UI.createTableView({
-    		data:menuTitles,
+    		data:data,//data array
     		backgroundColor:'#eaeaea',
     		rowHeight:40,
-    		headerTitle:'Menu'
     		
+    		
+    		
+		});
+		
+		// --- Fire Event on row click/touch
+		tableView.addEventListener('click',function(e){
+			//alert(e.index); //returns index of clicked row
+			//trigger menu button to close menu
+			//WpApp.fireEvent('app:displayMenu');
+			var tol = setTimeout(function(){
+				clearTimeout(tol);
+				WpApp.fireEvent('app:displayMenu');
+			},350);
+			//tol();
+			//WpApp.setActiveTab(Categ);
+			//alert(e.source.slug);
+			winCategBlogList = createBlogPostList(e.source.json_url, e.title, e.source.slug);
+			//Categ.setActiveTab(0);
+			Recent.open(winCategBlogList, { animated: true });
+			
+			
 		});
 		
 		menuWindow.add(tableView);
 	
-	
+	// --- End Menu Window ------------------------
 	
     var WpApp = Ti.UI.createTabGroup({}),
         Recent = Ti.UI.createTab({
@@ -266,16 +296,24 @@ var WpApp = (function() {
 
 	
 	
-	
+	// --- WpApp EventListeners ---------------------
 	//WpApp.left = 250;//parent
+	var tb_height;
+    
+  	tb_height = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPHONE_HEIGHT;
+	WpApp.top = 0;
 	WpApp.width = 320;
+	//WpApp.height = Ti.UI.FILL;
+	WpApp.moving = false;
+	WpApp.axis = 0;
+	WpApp.backgroundColor = '#5d5d5d';
 	
 	WpApp.addEventListener('app:displayMenu',function(e){
 		// If the menu is opened
     if(e.source.toggle == true){
         WpApp.animate({
             left:0,
-            duration:400,
+            duration:250,
             curve:Ti.UI.ANIMATION_CURVE_EASE_IN_OUT
         });
         e.source.toggle = false;
@@ -284,13 +322,26 @@ var WpApp = (function() {
     else{
         WpApp.animate({
             left:150,
-            duration:400,
+            duration:250,
             curve:Ti.UI.ANIMATION_CURVE_EASE_IN_OUT
         });
         e.source.toggle  = true;
     }
 	});
 	
-
+	//--- Tracking --------------------------------
+	
+	// --- End Tracking ----------------------------
+	//Admob
+	var adMobContainer = Ti.UI.createView({
+		height: config.ADMOB_IPHONE_HEIGHT,
+		width: config.ADMOB_IPHONE_WIDTH,
+		bottom:0
+		
+		
+	});
+	
+	WpApp.add(adMobContainer);
+	create_admob(adMobContainer);
     return WpApp;
 })();

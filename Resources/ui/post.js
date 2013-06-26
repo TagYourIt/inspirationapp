@@ -3,10 +3,11 @@ var createBlogDetail = function(blog_post) {
 
 	var tb_height;
 
-    tb_height = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPHONE_HEIGHT;
+    //tb_height = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPHONE_HEIGHT;
+    tb_height = Titanium.Platform.displayCaps.platformHeight-config.ADMOB_IPHONE_HEIGHT;
 
     if (Titanium.Platform.displayCaps.platformHeight==xscreen.ipadh) {
-      tb_height = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPAD_HEIGHT;
+      tb_height = Titanium.Platform.displayCaps.platformHeight-config.ADMOB_IPAD_HEIGHT;
     }
 
     // prepare style, make it pretty
@@ -37,7 +38,7 @@ var createBlogDetail = function(blog_post) {
         }),
         webPost = Ti.UI.createWebView({
             visible: false,
-            height: tb_height,
+            height: tb_height - 64,
             width: Titanium.Platform.displayCaps.platformWidth,
             html: post_content
         });
@@ -57,7 +58,7 @@ var createBlogDetail = function(blog_post) {
 
     create_share_button(Window, url, email_subject, email_body);
 	
-	create_admob(Window);
+	
 	
     return Window;
 };

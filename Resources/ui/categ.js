@@ -73,7 +73,7 @@ var winCateg = (function() {
         Window.tabGroup.activeTab.open(winCategBlogList, { animated: true });
     });
 
-     create_admob(Window);
+    
 
     return Window;
 })();

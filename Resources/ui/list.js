@@ -2,10 +2,11 @@ var createBlogPostList = function(url, title, section) {
 
     var tb_height;
 
-    tb_height = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPHONE_HEIGHT;
+    //tb_height = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPHONE_HEIGHT;
+    tb_height = Titanium.Platform.displayCaps.platformHeight-config.ADMOB_IPHONE_HEIGHT;
 
     if (Titanium.Platform.displayCaps.platformHeight==xscreen.ipadh) {
-      tb_height = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPAD_HEIGHT;
+      tb_height = Titanium.Platform.displayCaps.platformHeight-config.ADMOB_IPAD_HEIGHT;
     }
 
     var Window = Ti.UI.createWindow({
@@ -18,7 +19,7 @@ var createBlogPostList = function(url, title, section) {
         viewBlogList = Ti.UI.createTableView({
             top: 0,
             bottom: 0,
-            height: tb_height,
+            height: tb_height - 64,
             width: Titanium.Platform.displayCaps.platformWidth,
             separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.SINGLE_LINE,
             separatorColor: skin.CATEG_TV_SEPARATOR_COLOR
@@ -180,6 +181,6 @@ var createBlogPostList = function(url, title, section) {
     Window.events = events;
 	
     pull_to_refresh(Window, viewBlogList, url, section);
-	create_admob(Window);
+	//create_admob(Window);
     return Window;
 };

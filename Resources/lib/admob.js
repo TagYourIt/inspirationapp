@@ -4,13 +4,15 @@ function create_admob(win) {
 	var ad_top, ad_left, ad_height, ad_width;
 	
 	if (Titanium.Platform.displayCaps.platformHeight==xscreen.iphoneh) {
-		ad_top = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPHONE_HEIGHT;
+		//ad_top = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPHONE_HEIGHT;
+		ad_top = 0;
 		ad_left = 0;
 		ad_height = config.ADMOB_IPHONE_HEIGHT;
 		ad_width = config.ADMOB_IPHONE_WIDTH;
 	}
 	else {
-		ad_top = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPAD_HEIGHT; 
+		//ad_top = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPAD_HEIGHT;
+		ad_top = 0; 
 		ad_left = (Titanium.Platform.displayCaps.platformWidth-config.ADMOB_IPAD_WIDTH)/2;
     ad_height = config.ADMOB_IPAD_HEIGHT;
     ad_width = config.ADMOB_IPAD_WIDTH;

@@ -3,10 +3,10 @@ var winRecent = (function() {
     
     var tb_height;
     
-  	tb_height = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPHONE_HEIGHT;
-
+  	//tb_height = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPHONE_HEIGHT;
+	tb_height = Titanium.Platform.displayCaps.platformHeight-config.ADMOB_IPHONE_HEIGHT;
     if (Titanium.Platform.displayCaps.platformHeight==xscreen.ipadh) {
-    	tb_height = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPAD_HEIGHT;
+    	tb_height = Titanium.Platform.displayCaps.platformHeight-config.ADMOB_IPAD_HEIGHT;
     }
     
     url = json_url_recent;
@@ -23,7 +23,7 @@ var winRecent = (function() {
         viewBlogListRecent = Ti.UI.createTableView({
             top: 0,
             bottom: 0,
-            height: tb_height,
+            height: tb_height - 64,
             width: Titanium.Platform.displayCaps.platformWidth,
             separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.SINGLE_LINE,
             separatorColor: skin.RECENT_TV_SEPARATOR_COLOR
@@ -33,7 +33,8 @@ var winRecent = (function() {
 
 // Top left button
 var menuButton = Ti.UI.createButton({
-    title:'Menu',
+    image:'imgs/menu-white@2x.png',
+   
     toggle:false // Custom property for menu toggle
 });
 Window.setLeftNavButton(menuButton);
@@ -201,7 +202,7 @@ Window.setLeftNavButton(menuButton);
 
     pull_to_refresh(Window, viewBlogListRecent, url, section);
     
-    create_admob(Window);
+    
 
     Titanium.UI.iPhone.appBadge = 0; // reset
 
