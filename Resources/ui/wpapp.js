@@ -6,7 +6,7 @@ var WpApp = (function() {
 		barColor:'#5d5d5d',
 		top:0,
 		left:0,
-		width:150
+		width:Ti.UI.FILL
 	});
 	
 	menuWindow.open();
@@ -26,19 +26,12 @@ var WpApp = (function() {
 
         data.push(item);
     }
-	
-	
-	
-	
-		
+
 		// Tableview
 		var tableView = Ti.UI.createTableView({
     		data:data,//data array
-    		backgroundColor:'#eaeaea',
-    		rowHeight:40,
-    		
-    		
-    		
+    		backgroundColor:'#eaeaea'
+
 		});
 		
 		// --- Fire Event on row click/touch
@@ -63,6 +56,10 @@ var WpApp = (function() {
 		menuWindow.add(tableView);
 	
 	// --- End Menu Window ------------------------
+	
+	var tu = {toggle:false};
+	
+	// --- Global ---------------------------------
 	
     var WpApp = Ti.UI.createTabGroup({}),
         Recent = Ti.UI.createTab({
@@ -316,22 +313,35 @@ var WpApp = (function() {
             duration:250,
             curve:Ti.UI.ANIMATION_CURVE_EASE_IN_OUT
         });
-        e.source.toggle = false;
+        tu.toggle = e.source.toggle = false;
+        //tu.toggle = false;
+        winRecent.touchEnabled = true;
     }
     // If the menu isn't opened
     else{
         WpApp.animate({
-            left:150,
+            left:240,
             duration:250,
             curve:Ti.UI.ANIMATION_CURVE_EASE_IN_OUT
         });
-        e.source.toggle  = true;
+        tu.toggle = e.source.toggle = true;
+       // tu.toggle = true;
+        winRecent.touchEnabled = false;
     }
 	});
 	
-	//--- Tracking --------------------------------
+	//--- Swiping --------------------------------
+	//only allow the listing window to be swipe able not detail post
+	winRecent.addEventListener('swipe',function(e){
+		//to open
+		//direction right
+		if(e.direction == 'right' && tu.toggle == false){
+			WpApp.fireEvent('app:displayMenu');
+		}
+		
+	});
 	
-	// --- End Tracking ----------------------------
+	// --- End Swiping ----------------------------
 	//Admob
 	var adMobContainer = Ti.UI.createView({
 		height: config.ADMOB_IPHONE_HEIGHT,

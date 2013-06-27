@@ -34,7 +34,6 @@ var winRecent = (function() {
 // Top left button
 var menuButton = Ti.UI.createButton({
     image:'imgs/menu-white@2x.png',
-   
     toggle:false // Custom property for menu toggle
 });
 Window.setLeftNavButton(menuButton);
@@ -208,6 +207,10 @@ Window.setLeftNavButton(menuButton);
 
 	menuButton.addEventListener('click',function(){
 		WpApp.fireEvent('app:displayMenu');
+	});
+	
+	Window.addEventListener('swipe',function(e){
+		Window.touchEnabled = false;
 	});
 
     return Window;

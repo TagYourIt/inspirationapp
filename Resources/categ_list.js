@@ -14,7 +14,7 @@ var categ_list = {
         },
         {
             "slug"    : "typography",
-            "label"   : "typography", //Business
+            "label"   : "Typography", //Business
             "icon_off": "imgs/categ/business.png",
             "icon_on" : "imgs/categ/business.png"
         },
