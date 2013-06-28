@@ -26,7 +26,8 @@ var winRecent = (function() {
             height: tb_height - 64,
             width: Titanium.Platform.displayCaps.platformWidth,
             separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.SINGLE_LINE,
-            separatorColor: skin.RECENT_TV_SEPARATOR_COLOR
+            separatorColor: skin.RECENT_TV_SEPARATOR_COLOR,
+            
         });
 
 	//// ---- Window with navigationGroup
@@ -109,7 +110,8 @@ Window.setLeftNavButton(menuButton);
                 className: "blog_list_rows",
                 height: 62,
                 backgroundColor: bgcolor, 
-                hasChild: false
+                hasChild: false,
+                selectedBackgroundColor:'#fff'
             }),
             img = Ti.UI.createImageView({
                 image: image,
@@ -209,9 +211,9 @@ Window.setLeftNavButton(menuButton);
 		WpApp.fireEvent('app:displayMenu');
 	});
 	
-	Window.addEventListener('swipe',function(e){
-		Window.touchEnabled = false;
-	});
+	// Window.addEventListener('swipe',function(e){
+		// Window.touchEnabled = false;
+	// });
 
     return Window;
 })();

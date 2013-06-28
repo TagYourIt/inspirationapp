@@ -92,7 +92,8 @@ var createBlogPostList = function(url, title, section) {
                 className: "blog_list_rows",
                 height: 62,
                 backgroundColor: bgcolor,
-                hasChild: false
+                hasChild: false,
+                selectedBackgroundColor:'#ffffff'
             }),
             img = Ti.UI.createImageView({
                 image: image,

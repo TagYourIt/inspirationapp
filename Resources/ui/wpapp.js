@@ -6,17 +6,46 @@ var WpApp = (function() {
 		barColor:'#5d5d5d',
 		top:0,
 		left:0,
-		width:Ti.UI.FILL
+		width:Ti.UI.FILL,
+		tabBarHidden:false,
+		layout:'vertical'
 	});
 	
-	menuWindow.open();
+	
 	//---Menu Table
+	var headerView = Ti.UI.createView({
+		top:0,
+		left:0,
+		width:Ti.UI.FILL,
+		height:44,
+		backgroundColor:'#222222'
+	});
+	var headerLabel = Ti.UI.createLabel({
+		text:'Menu',
+		color:'#ffffff',
+		font:{fontSize:20},
+		left:10
+	});
+	headerView.add(headerLabel);
+	menuWindow.add(headerView);
 	// Menu Titles
 	
 	var categ = categ_list.categs;//get list from categ_list.js file
-    var data = [];//array
+    var tableData = [];//array
 	//create loop to store into data array
     for (var i = 0; i < categ.length; i++) {
+        var row = Ti.UI.createTableViewRow({
+    		className:'forumEvent', // used to improve table performance
+    		selectedBackgroundColor:'white',
+   			 rowIndex:i, // custom property, useful for determining the row during events
+   			 height:42
+  		});
+  
+  
+  
+  
+  
+        
         var item = {
            
             title: categ[i].label,
@@ -24,15 +53,32 @@ var WpApp = (function() {
             json_url: config.BLOG_URL + "?json=get_category_posts&count=" + config.JSON_POST_COUNT + "&apikey=" + config.JSON_API_KEY + "&slug=" + categ[i].slug
         };
 
-        data.push(item);
+		var labelUserName = Ti.UI.createLabel({
+    color:'#222222',
+    font:{fontFamily:'Helvetica Neue',  fontWeight:'normal',fontSize:16},
+    text:categ[i].label,
+    left:10, top: 6,
+    width:200, height: 30,
+    title: categ[i].label,
+            slug: categ[i].slug,
+            json_url: config.BLOG_URL + "?json=get_category_posts&count=" + config.JSON_POST_COUNT + "&apikey=" + config.JSON_API_KEY + "&slug=" + categ[i].slug
+  });
+
+		row.add(labelUserName);
+        tableData.push(row);
     }
 
 		// Tableview
 		var tableView = Ti.UI.createTableView({
-    		data:data,//data array
-    		backgroundColor:'#eaeaea'
+    		data:tableData,//data array
+    		backgroundColor:'#eaeaea',
+    		
+    		
+    		
 
 		});
+		
+		
 		
 		// --- Fire Event on row click/touch
 		tableView.addEventListener('click',function(e){
@@ -313,7 +359,7 @@ var WpApp = (function() {
             duration:250,
             curve:Ti.UI.ANIMATION_CURVE_EASE_IN_OUT
         });
-        tu.toggle = e.source.toggle = false;
+        e.source.toggle = false;
         //tu.toggle = false;
         winRecent.touchEnabled = true;
     }
@@ -324,7 +370,7 @@ var WpApp = (function() {
             duration:250,
             curve:Ti.UI.ANIMATION_CURVE_EASE_IN_OUT
         });
-        tu.toggle = e.source.toggle = true;
+        e.source.toggle = true;
        // tu.toggle = true;
         winRecent.touchEnabled = false;
     }
@@ -332,14 +378,14 @@ var WpApp = (function() {
 	
 	//--- Swiping --------------------------------
 	//only allow the listing window to be swipe able not detail post
-	winRecent.addEventListener('swipe',function(e){
-		//to open
-		//direction right
-		if(e.direction == 'right' && tu.toggle == false){
-			WpApp.fireEvent('app:displayMenu');
-		}
-		
-	});
+	// winRecent.addEventListener('swipe',function(e){
+		// //to open
+		// //direction right
+		// if(e.direction == 'right' && tu.toggle == false){
+			// WpApp.fireEvent('app:displayMenu');
+		// }
+// 		
+	// });
 	
 	// --- End Swiping ----------------------------
 	//Admob
@@ -353,5 +399,6 @@ var WpApp = (function() {
 	
 	WpApp.add(adMobContainer);
 	create_admob(adMobContainer);
+	menuWindow.open();
     return WpApp;
 })();
