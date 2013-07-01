@@ -10,10 +10,12 @@ var winRecent = (function() {
     }
     
     url = json_url_recent;
-    title = l_recent_post;
+    //title = l_recent_post;
+    title = 'Testing WinRecent Title';
     section = 'recent_post';
 
     var Window = Ti.UI.createWindow({
+    		backgroundColor:'#f7f7f7',
             navBarHidden: false,
             title: title,
             barColor: skin.RECENT_BAR_COLOR,
@@ -108,30 +110,32 @@ Window.setLeftNavButton(menuButton);
         
         var row = Ti.UI.createTableViewRow({
                 className: "blog_list_rows",
-                height: 62,
+                height: 95,
                 backgroundColor: bgcolor, 
-                hasChild: false,
+                hasChild: false, //true will display the chevron
                 selectedBackgroundColor:'#fff'
             }),
             img = Ti.UI.createImageView({
                 image: image,
-                height: 56,
+                height: 75,
                 left: 3,
-                width: 75,
-                top: 3,
+                width: 100,
+                top: 10,
                 preventDefaultImage: false,
                 defaultImage: config.DEFAULT_IMAGE
             }),
             title = Ti.UI.createLabel({
                 text: title,
-                width: title_width,
+                width: Ti.UI.SIZE,
                 height: 'auto',
-                left: 82,
-                top: 4,
+                left: 110,
+                top: 10,
                 color: skin.RECENT_TV_TITLE_COLOR,
                 font: {
-                    fontSize: 14,
-                    fontWeight: "normal"
+                    fontSize: 18,
+                    fontWeight: "lighter",
+                    fontFamily:"Helvetica Neue",
+                    
                    
                 }
             }),
@@ -139,8 +143,9 @@ Window.setLeftNavButton(menuButton);
                 text: meta,
                 width: 210,
                 height: 30,
-                left: 82,
-                top: 22 + 12,
+                left: 110,
+                //top: 22 + 12,
+                bottom: 0,
                 color: skin.RECENT_TV_META_COLOR,
                 font: {
                     fontSize: 12
@@ -211,9 +216,9 @@ Window.setLeftNavButton(menuButton);
 		WpApp.fireEvent('app:displayMenu');
 	});
 	
-	// Window.addEventListener('swipe',function(e){
-		// Window.touchEnabled = false;
-	// });
-
+	
+	
+	
+	
     return Window;
 })();

@@ -92,9 +92,9 @@ var WpApp = (function() {
 			//tol();
 			//WpApp.setActiveTab(Categ);
 			//alert(e.source.slug);
-			winCategBlogList = createBlogPostList(e.source.json_url, e.title, e.source.slug);
+			//winCategBlogList = createBlogPostList(e.source.json_url, e.title, e.source.slug);
 			//Categ.setActiveTab(0);
-			Recent.open(winCategBlogList, { animated: true });
+			//Recent.open(winCategBlogList, { animated: true });
 			
 			
 		});
@@ -386,6 +386,8 @@ var WpApp = (function() {
 		// }
 // 		
 	// });
+	
+
 	
 	// --- End Swiping ----------------------------
 	//Admob

@@ -11,8 +11,9 @@ var createBlogDetail = function(blog_post) {
     }
 
     // prepare style, make it pretty
-   	style = '<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">';
-    style = style + "<style>body {margin:10px} h1 {margin-bottom:0;} h5 { margin-bottom:10px;color: #aaa; }</style>";
+   	//style = '<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">';
+    var style;
+    style = "<style>body {margin:10px;font-family:'Helvetica Neue';font-size:14px;color:#333} h1 {margin-bottom:0;font-family:'Helvetica Neue';font-weight:200;color:#222} h5 { margin-bottom:10px;color: #333;font-weight:200 } a{text-decoration:none;color:#222222;}</style>";
 	
 	
 
@@ -35,6 +36,7 @@ var createBlogDetail = function(blog_post) {
             barColor: skin.POST_BAR_COLOR,
             barImage: skin.POST_BAR_IMAGE,
             layout: "vertical",
+            width: Ti.UI.FILL
         }),
         webPost = Ti.UI.createWebView({
             visible: false,
@@ -58,7 +60,16 @@ var createBlogDetail = function(blog_post) {
 
     create_share_button(Window, url, email_subject, email_body);
 	
-	
+	Window.addEventListener('swipe',function(e){
+		if(e.direction == "right"){
+			
+			//Ti.API.info(Window.children);
+			//Ti.API.info(WpApp.getActiveTab().window.getFocusable);
+			Window.close({animated:true});
+			
+			
+		}
+	});
 	
     return Window;
 };
