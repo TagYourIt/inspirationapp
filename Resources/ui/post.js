@@ -35,22 +35,22 @@ var createBlogDetail = function(blog_post) {
             navBarHidden: false,
             barColor: skin.POST_BAR_COLOR,
             barImage: skin.POST_BAR_IMAGE,
-            layout: "vertical",
-            width: Ti.UI.FILL
+            layout: "vertical"
+           
         }),
         webPost = Ti.UI.createWebView({
             visible: false,
             height: tb_height - 64,
             width: Titanium.Platform.displayCaps.platformWidth,
-            html: post_content
-        });
-	
+            html: post_content,
+            willHandleTouches:false
+	});
 	
 
-    Window.add(webPost);
-    
+   Window.add(webPost);
+   
     webPost.show();
-    
+   
 	
 	
     var url = blog_post.url;

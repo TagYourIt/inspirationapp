@@ -10,8 +10,8 @@ var winRecent = (function() {
     }
     
     url = json_url_recent;
-    //title = l_recent_post;
-    title = 'Testing WinRecent Title';
+    title = l_recent_post;
+    //title = 'Testing WinRecent Title';
     section = 'recent_post';
 
     var Window = Ti.UI.createWindow({

@@ -368,7 +368,7 @@ var WpApp = (function() {
         WpApp.animate({
             left:240,
             duration:250,
-            curve:Ti.UI.ANIMATION_CURVE_EASE_IN_OUT
+            curve:Ti.UI.ANIMATION_CURVE_EASE_OUT
         });
         e.source.toggle = true;
        // tu.toggle = true;
@@ -386,8 +386,8 @@ var WpApp = (function() {
 		// }
 // 		
 	// });
-	
-
+		
+		
 	
 	// --- End Swiping ----------------------------
 	//Admob
