@@ -1,111 +1,10 @@
 var WpApp = (function() {
 	
-	//--- Create Menu Window ----------------------------------------
-	var menuWindow = Ti.UI.createWindow({
-		title:'Yo',
-		barColor:'#5d5d5d',
-		top:0,
-		left:0,
-		width:Ti.UI.FILL,
-		tabBarHidden:false,
-		layout:'vertical'
-	});
-	
-	
-	//---Menu Table
-	var headerView = Ti.UI.createView({
-		top:0,
-		left:0,
-		width:Ti.UI.FILL,
-		height:44,
-		backgroundColor:'#222222'
-	});
-	var headerLabel = Ti.UI.createLabel({
-		text:'Menu',
-		color:'#ffffff',
-		font:{fontSize:20},
-		left:10
-	});
-	headerView.add(headerLabel);
-	menuWindow.add(headerView);
-	// Menu Titles
-	
-	var categ = categ_list.categs;//get list from categ_list.js file
-    var tableData = [];//array
-	//create loop to store into data array
-    for (var i = 0; i < categ.length; i++) {
-        var row = Ti.UI.createTableViewRow({
-    		className:'forumEvent', // used to improve table performance
-    		selectedBackgroundColor:'white',
-   			 rowIndex:i, // custom property, useful for determining the row during events
-   			 height:42
-  		});
-  
-  
-  
-  
-  
-        
-        var item = {
-           
-            title: categ[i].label,
-            slug: categ[i].slug,
-            json_url: config.BLOG_URL + "?json=get_category_posts&count=" + config.JSON_POST_COUNT + "&apikey=" + config.JSON_API_KEY + "&slug=" + categ[i].slug
-        };
+	var tw = Ti.UI.createWindow({});
+tw.add(mainMenu);
 
-		var labelUserName = Ti.UI.createLabel({
-    color:'#222222',
-    font:{fontFamily:'Helvetica Neue',  fontWeight:'normal',fontSize:16},
-    text:categ[i].label,
-    left:10, top: 6,
-    width:200, height: 30,
-    title: categ[i].label,
-            slug: categ[i].slug,
-            json_url: config.BLOG_URL + "?json=get_category_posts&count=" + config.JSON_POST_COUNT + "&apikey=" + config.JSON_API_KEY + "&slug=" + categ[i].slug
-  });
-
-		row.add(labelUserName);
-        tableData.push(row);
-    }
-
-		// Tableview
-		var tableView = Ti.UI.createTableView({
-    		data:tableData,//data array
-    		backgroundColor:'#eaeaea',
-    		
-    		
-    		
-
-		});
-		
-		
-		
-		// --- Fire Event on row click/touch
-		tableView.addEventListener('click',function(e){
-			//alert(e.index); //returns index of clicked row
-			//trigger menu button to close menu
-			//WpApp.fireEvent('app:displayMenu');
-			var tol = setTimeout(function(){
-				clearTimeout(tol);
-				WpApp.fireEvent('app:displayMenu');
-			},350);
-			//tol();
-			//WpApp.setActiveTab(Categ);
-			//alert(e.source.slug);
-			//winCategBlogList = createBlogPostList(e.source.json_url, e.title, e.source.slug);
-			//Categ.setActiveTab(0);
-			//Recent.open(winCategBlogList, { animated: true });
-			
-			
-		});
-		
-		menuWindow.add(tableView);
+tw.open();
 	
-	// --- End Menu Window ------------------------
-	
-	var tu = {toggle:false};
-	
-	// --- Global ---------------------------------
 	
     var WpApp = Ti.UI.createTabGroup({}),
         Recent = Ti.UI.createTab({
@@ -366,10 +265,11 @@ var WpApp = (function() {
     // If the menu isn't opened
     else{
         WpApp.animate({
-            left:240,
+            left:214,
             duration:250,
             curve:Ti.UI.ANIMATION_CURVE_EASE_OUT
         });
+        
         e.source.toggle = true;
        // tu.toggle = true;
         winRecent.touchEnabled = false;
@@ -401,6 +301,6 @@ var WpApp = (function() {
 	
 	WpApp.add(adMobContainer);
 	create_admob(adMobContainer);
-	menuWindow.open();
+
     return WpApp;
 })();

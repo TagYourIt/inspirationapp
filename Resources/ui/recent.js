@@ -111,26 +111,9 @@ Window.setLeftNavButton(menuButton);
         var row = Ti.UI.createTableViewRow({
                 className: "blog_list_rows",
                 height: 95,
-                backgroundColor: bgcolor, 
+                //backgroundColor: bgcolor, 
                 hasChild: false, //true will display the chevron
-                selectedBackgroundColor:'#fff'
-            }),
-            img = Ti.UI.createImageView({
-                image: image,
-                height: 75,
-                left: 3,
-                width: 100,
-                top: 10,
-                preventDefaultImage: false,
-                defaultImage: config.DEFAULT_IMAGE
-            }),
-            title = Ti.UI.createLabel({
-                text: title,
-                width: Ti.UI.SIZE,
-                height: 'auto',
-                left: 110,
-                top: 10,
-                color: skin.RECENT_TV_TITLE_COLOR,
+                selectedBackgroundColor:'#fff',
                 font: {
                     fontSize: 18,
                     fontWeight: "lighter",
@@ -139,9 +122,29 @@ Window.setLeftNavButton(menuButton);
                    
                 }
             }),
+            img = Ti.UI.createImageView({
+                image: image,
+                height: 75,
+                left: 3,
+                width: 100,
+                top: 10,
+                preventDefaultImage: false,
+                defaultImage: config.DEFAULT_IMAGE,
+                borderWidth:1,
+                borderColor:'#c1c1c1'
+            }),
+            title = Ti.UI.createLabel({
+                text: title,
+                width: 200,//Ti.UI.SIZE,
+                height: 'auto',
+                left: 110,
+                top: 6,
+                color: skin.RECENT_TV_TITLE_COLOR
+                
+            }),
             body = Ti.UI.createLabel({
                 text: meta,
-                width: 210,
+                width: 200,
                 height: 30,
                 left: 110,
                 //top: 22 + 12,
