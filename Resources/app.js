@@ -1,7 +1,7 @@
 // load module
 var Admob = require('ti.admob');
 var MainMenu = require('ui/MainMenu');
-var mainMenu = new MainMenu();
+
 
 Titanium.UI.iPhone.statusBarStyle = Titanium.UI.iPhone.StatusBar.TRANSLUCENT_BLACK;
 

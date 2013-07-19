@@ -1,9 +1,7 @@
 var WpApp = (function() {
-	
-	var tw = Ti.UI.createWindow({});
-tw.add(mainMenu);
-
-tw.open();
+	var mainMenu = new MainMenu(),tw = Ti.UI.createWindow({});
+	tw.add(mainMenu);
+	tw.open();
 	
 	
     var WpApp = Ti.UI.createTabGroup({}),
@@ -62,18 +60,18 @@ tw.open();
     // WpApp.addTab(Yt);
     // WpApp.addTab(Flickr);
      //WpApp.addTab(About);
-
+// ----------------------------------------------------------------------------
     WpApp.addEventListener(
     events.SHOW_BLOG_POST, function(e) {
 
-        if (e.tab == "recent_post") {
+        if (e.tab == "recent_post" || e.source.menuCat == true) {
             Recent.open(createBlogDetail(blog_post[e.id]), { animated: true });
         }
         else if (e.tab == "categories") {
             Categ.open(createBlogDetail(blog_post[e.id]), { animated: true });
         }
     });
-
+// ----------------------------------------------------------------------------
     function load_db(win, section) {
         var data = [];
         db = Titanium.Database.open(config.DB_NAME);

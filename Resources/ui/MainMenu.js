@@ -34,7 +34,7 @@ function MainMenu() {
 	menuWindow.add(headerView);
 	// Menu Titles
 	
-	var categ = '';//categ_list.categs;//get list from categ_list.js file
+	var categ = categ_list.categs;//get list from categ_list.js file
     var tableData = [];//array
 	//create loop to store into data array
     for (var i = 0; i < categ.length; i++) {
@@ -42,7 +42,8 @@ function MainMenu() {
     		className:'forumEvent', // used to improve table performance
     		selectedBackgroundColor:'white',
    			 rowIndex:i, // custom property, useful for determining the row during events
-   			 height:42
+   			 height:42,
+   			 
   		});
   
   
@@ -96,9 +97,16 @@ function MainMenu() {
 			//tol();
 			//WpApp.setActiveTab(Categ);
 			//alert(e.source.slug);
-			//winCategBlogList = createBlogPostList(e.source.json_url, e.title, e.source.slug);
+			winCategBlogList = createBlogPostList(e.source.json_url, e.title, e.source.slug);
 			//Categ.setActiveTab(0);
 			//Recent.open(winCategBlogList, { animated: true });
+			//winCategBlogList = createBlogPostList(e.item.json_url, e.item.label, e.item.slug);
+        	//WpApp.setActiveTab.open(winCategBlogList, { animated: true });
+        	//WpApp.activeTab.window.open(winCategBlogList, { animated: true });
+        	//WpApp.setActiveTab[1].open(winCategBlogList, { animated: true });
+        	WpApp.setActiveTab(1);//.open(winCategBlogList, { animated: true });
+        	WpApp.activeTab.open(winCategBlogList, { animated: true });
+        	
 			
 			
 		});

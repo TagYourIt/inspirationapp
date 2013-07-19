@@ -1,6 +1,6 @@
 var winCateg = (function() {
     var Window = Ti.UI.createWindow({
-            navBarHidden: false,
+            navBarHidden: true,
             titleid: 'categ_categories',
             barColor: skin.CATEG_BAR_COLOR,
             barImage: skin.CATEG_BAR_IMAGE,

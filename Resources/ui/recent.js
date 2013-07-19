@@ -113,6 +113,7 @@ Window.setLeftNavButton(menuButton);
                 height: 95,
                 //backgroundColor: bgcolor, 
                 hasChild: false, //true will display the chevron
+                backgroundColor:'#f4f4f4',
                 selectedBackgroundColor:'#fff',
                 font: {
                     fontSize: 18,
@@ -128,8 +129,8 @@ Window.setLeftNavButton(menuButton);
                 left: 3,
                 width: 100,
                 top: 10,
-                preventDefaultImage: false,
-                defaultImage: config.DEFAULT_IMAGE,
+                //preventDefaultImage: false,
+                //defaultImage: config.DEFAULT_IMAGE,
                 borderWidth:1,
                 borderColor:'#c1c1c1'
             }),
