@@ -2,11 +2,12 @@ var createBlogPostList = function(url, title, section) {
 
     var tb_height;
 
-    //tb_height = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPHONE_HEIGHT;
-    tb_height = Titanium.Platform.displayCaps.platformHeight-config.ADMOB_IPHONE_HEIGHT;
+    //tb_height = Ti.Platform.displayCaps.platformHeight-110-config.ADMOB_IPHONE_HEIGHT;
+    tb_height = Ti.Platform.displayCaps.platformHeight-config.ADMOB_IPHONE_HEIGHT;
+    Ti.API.info("list.js:7 ", tb_height);
 
-    if (Titanium.Platform.displayCaps.platformHeight==xscreen.ipadh) {
-      tb_height = Titanium.Platform.displayCaps.platformHeight-config.ADMOB_IPAD_HEIGHT;
+    if (Ti.Platform.displayCaps.platformHeight==xscreen.ipadh) {
+      tb_height = Ti.Platform.displayCaps.platformHeight-config.ADMOB_IPAD_HEIGHT;
     }
 
     var Window = Ti.UI.createWindow({
@@ -20,7 +21,7 @@ var createBlogPostList = function(url, title, section) {
             top: 0,
             bottom: 0,
             height: tb_height - 64,
-            width: Titanium.Platform.displayCaps.platformWidth,
+            width: Ti.Platform.displayCaps.platformWidth,
             separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.SINGLE_LINE,
             separatorColor: skin.CATEG_TV_SEPARATOR_COLOR
         });
@@ -66,13 +67,16 @@ var createBlogPostList = function(url, title, section) {
 
         var max_title_length, title_width;
 
-        if (Titanium.Platform.displayCaps.platformHeight==xscreen.iphoneh) {
+        if (Ti.Platform.displayCaps.platformHeight==xscreen.iphoneh) {
+        	
           max_title_length = 48;
-          title_width = Titanium.Platform.displayCaps.platform-100;
+          title_width = Ti.Platform.displayCaps.platformWidth-100;
+          Ti.API.info(":74 [1]",title_width);
         }
         else {
           max_title_length = 130;
-          title_width = Titanium.Platform.displayCaps.platform-100;
+          title_width = Ti.Platform.displayCaps.platformWidth-100;
+          Ti.API.info(":74 [2]",title_width);
         }
 
         title = wpappHtmlDecode(title);
@@ -87,6 +91,9 @@ var createBlogPostList = function(url, title, section) {
         else {
           bgcolor = skin.CATEG_TV_BGCOLOR_ALT;
         }
+
+		image = encodeURI(image);
+		Ti.API.info("list.js:92 ", image);
 
         var row = Ti.UI.createTableViewRow({
                 className: "blog_list_rows",

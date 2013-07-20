@@ -1,7 +1,5 @@
 var WpApp = (function() {
-	var mainMenu = new MainMenu(),tw = Ti.UI.createWindow({});
-	tw.add(mainMenu);
-	tw.open();
+	
 	
 	
     var WpApp = Ti.UI.createTabGroup({}),

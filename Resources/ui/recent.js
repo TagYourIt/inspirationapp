@@ -3,13 +3,14 @@ var winRecent = (function() {
     
     var tb_height;
     
-  	//tb_height = Titanium.Platform.displayCaps.platformHeight-110-config.ADMOB_IPHONE_HEIGHT;
-	tb_height = Titanium.Platform.displayCaps.platformHeight-config.ADMOB_IPHONE_HEIGHT;
-    if (Titanium.Platform.displayCaps.platformHeight==xscreen.ipadh) {
-    	tb_height = Titanium.Platform.displayCaps.platformHeight-config.ADMOB_IPAD_HEIGHT;
+  	//tb_height = Ti.Platform.displayCaps.platformHeight-110-config.ADMOB_IPHONE_HEIGHT;
+	tb_height = Ti.Platform.displayCaps.platformHeight-config.ADMOB_IPHONE_HEIGHT;
+    if (Ti.Platform.displayCaps.platformHeight==xscreen.ipadh) {
+    	tb_height = Ti.Platform.displayCaps.platformHeight-config.ADMOB_IPAD_HEIGHT;
     }
     
     url = json_url_recent;
+    Ti.API.info("recent.js:13 ", url);
     title = l_recent_post;
     //title = 'Testing WinRecent Title';
     section = 'recent_post';
@@ -18,15 +19,20 @@ var winRecent = (function() {
     		backgroundColor:'#f7f7f7',
             navBarHidden: false,
             title: title,
-            barColor: skin.RECENT_BAR_COLOR,
-            barImage: skin.RECENT_BAR_IMAGE,
+            //barColor: skin.RECENT_BAR_COLOR,
+            //barImage: skin.RECENT_BAR_IMAGE,
+            barColor:'#52AF78',
+            barImage:'imgs/nabBar.png',
+           backgroundGradient:{}
+           // backgroundImage:'imgs/navBar.png'
+           
             
         }),
         viewBlogListRecent = Ti.UI.createTableView({
             top: 0,
             bottom: 0,
             height: tb_height - 64,
-            width: Titanium.Platform.displayCaps.platformWidth,
+            width: Ti.Platform.displayCaps.platformWidth,
             separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.SINGLE_LINE,
             separatorColor: skin.RECENT_TV_SEPARATOR_COLOR,
             
@@ -37,6 +43,11 @@ var winRecent = (function() {
 // Top left button
 var menuButton = Ti.UI.createButton({
     image:'imgs/menu-white@2x.png',
+  
+    backgroundGradient:{
+    	
+    },
+    
     toggle:false // Custom property for menu toggle
 });
 Window.setLeftNavButton(menuButton);
@@ -84,13 +95,13 @@ Window.setLeftNavButton(menuButton);
         
         var max_title_length, title_width;
 
-        if (Titanium.Platform.displayCaps.platformHeight==xscreen.iphoneh) {
+        if (Ti.Platform.displayCaps.platformHeight==xscreen.iphoneh) {
           max_title_length = 52;
-          title_width = Titanium.Platform.displayCaps.platform-100;
+          title_width = Ti.Platform.displayCaps.platformWidth-100;
         }
         else {
           max_title_length = 130;
-          title_width = Titanium.Platform.displayCaps.platform-100;
+          title_width = Ti.Platform.displayCaps.platformWidth-100;
         }
 
         title = wpappHtmlDecode(title);

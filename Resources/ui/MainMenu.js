@@ -95,17 +95,14 @@ function MainMenu() {
 				WpApp.fireEvent('app:displayMenu');
 			},350);
 			//tol();
-			//WpApp.setActiveTab(Categ);
-			//alert(e.source.slug);
-			winCategBlogList = createBlogPostList(e.source.json_url, e.title, e.source.slug);
-			//Categ.setActiveTab(0);
-			//Recent.open(winCategBlogList, { animated: true });
-			//winCategBlogList = createBlogPostList(e.item.json_url, e.item.label, e.item.slug);
-        	//WpApp.setActiveTab.open(winCategBlogList, { animated: true });
-        	//WpApp.activeTab.window.open(winCategBlogList, { animated: true });
-        	//WpApp.setActiveTab[1].open(winCategBlogList, { animated: true });
-        	WpApp.setActiveTab(1);//.open(winCategBlogList, { animated: true });
-        	WpApp.activeTab.open(winCategBlogList, { animated: true });
+			winCategBlogList = createBlogPostList(e.source.json_url, "e.title", e.source.slug);
+			
+        	Ti.API.info("MainMenu.js:109 ",e.source.json_url, "e.title", e.source.slug);
+        	//WpApp.activeTab.open(winCategBlogList, { animated: true });//* Doesnt not replace the current Recent News window but opened another window child
+        	//WpApp.activeTab.load(winCategBlogList, { animated: true });//* Doesnt not replace the current Recent News window but opened another window child
+        	Ti.API.info(winCateg);
+        	WpApp.setActiveTab(1);
+        	
         	
 			
 			

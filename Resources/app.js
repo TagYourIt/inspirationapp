@@ -1,6 +1,5 @@
 // load module
 var Admob = require('ti.admob');
-var MainMenu = require('ui/MainMenu');
 
 
 Titanium.UI.iPhone.statusBarStyle = Titanium.UI.iPhone.StatusBar.TRANSLUCENT_BLACK;
@@ -44,7 +43,14 @@ Ti.include(
 );
 
 WpApp.init_db();
-// mainMenu.open();
+
+// Category Main Menu Drawer ------------------------------ //
+var MainMenu = require('ui/MainMenu');
+
+var mainMenu = new MainMenu(),tw = Ti.UI.createWindow({});
+	tw.add(mainMenu);
+	tw.open();
+// End Category Main Menu Drawer ------------------------- //
 
 WpApp.open();
 

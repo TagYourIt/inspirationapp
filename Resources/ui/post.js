@@ -33,8 +33,8 @@ var createBlogDetail = function(blog_post) {
     var Window = Ti.UI.createWindow({
             title: blog_post.title_plain,
             navBarHidden: false,
-            barColor: skin.POST_BAR_COLOR,
-            barImage: skin.POST_BAR_IMAGE,
+            barColor:'#52AF78',
+            barImage:'imgs/nabBar.png',
             layout: "vertical"
            
         }),
